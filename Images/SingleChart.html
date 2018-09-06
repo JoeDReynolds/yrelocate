@@ -1,0 +1,4196 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_f0536e4f5f64451cb254ff62475eafb0 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    
+            <style> #vega_df2bf1cd21ba4369834e6ef98f155a80 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vega/1.4.3/vega.min.js"></script>
+    
+            <style> #vega_9f2b9d47b1154780a6234129a325d766 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_8a5cf5d7575e4421b7bad58108a4aaf4 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_ea8ac7b35d3d4fd0b1b8dcf7e0378d90 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_e522fbbdad81459091cb71a704e24f5e {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_fad1cf155dde4234aaacf570c35e8da7 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_0dcb41d9a43d48f7a9241c60c74d4f28 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_9e684e0d6f764f649377702d0a8a2b77 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_3860ad4abcff43f0bb61187e315e417e {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_493abd4e28ee47cbbdb32777579ba0a0 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_5bd689e9e32b41f987eb159970f9bd08 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_f994d486bb474bcfa4a271efdda4fa9a {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_5b79c6ff2ecd42a180b4698a7ec44946 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_ca4b6b9820c743e8be67c041fad66ea8 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_b3008934d1034bd2b83bd56023b844fc {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_b401b537a5fa40628f181672c168c3ce {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_c314b3d68fb84cfe89fc0b2819115a57 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_9182ec66497f48ab8dd4acb2354b7298 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_e1d8f9f5c6fc4647bde87aa4bbb0c427 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_cf9521036dc945a1a0c9dbf277b29d13 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_73a51daa531b4a16a150681d8ac084c7 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_3f72e52ed44f4605ab1f077f5029c62e {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_87e738fff3104047a9b32474c72107ec {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_45b2ba2c355f4bf1970738ebdfbc5c99 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_08b47887821a4d2ea0509ab9cec18d69 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_d9a98d6dfbfd42cc81b8edc1e01be872 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_a092d85f4d09407ab616428d86cd0be7 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_de623075320447ea809ee6e25d753d97 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_ac75cd4a94a444fa9b70591d47fa4be3 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_51d778a42a974db58ef47452c0c19802 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_01130c86afa34720ac62431a7e0e753d {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_e6ef183012b047da924d81bbcf7c551b {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_7125db81046346de96c9670520c17fc6 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_8186025e6aa8469286a2a144357d09c2 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_9e4fca556dd645e4b819c57ffc8933c3 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_5c1954d4fdb84eceb11403faa02ee1af {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_3897fdeca9cf4628a0ef135977c6be19 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_cbfadbc72cd9441a85894cbc939a746b {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_d6e842ee98a94836af9fa0a753bf4126 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_f932d0af7efb45579310e2ef3f2aab50 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_9568365b0173426f818e45fcd993e04d {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_7fe940d6d02d4436a0ad1d6a116c164e {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_f1a81ff5ad994e3583822a88fa39015d {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_33f19285ea0649dbb746f51f3f094c36 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_279a5d59e8374bd2b002b3f4075af9cb {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_e8b8355597b749bfb95b88e6913e8dca {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_9d424e50319846829f73a6a4808634c7 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_5d4c05ca987c4e2a8e05a00fcd131452 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_ba1bc1e69d014a3ea3c92a2a8f63c683 {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_e0fa5fadfc9f4dcba5a2aa96fcb0839c {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_4a571069066c419483bd815d4642460d {
+                position : relative;
+                width : 200.0px;
+                height: 150.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_f0536e4f5f64451cb254ff62475eafb0" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_f0536e4f5f64451cb254ff62475eafb0 = L.map(
+        'map_f0536e4f5f64451cb254ff62475eafb0', {
+        center: [30.35, -97.75],
+        zoom: 11,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_ec465c78b15d4bd7b9f4618514d4b418 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+    
+
+            var circle_37ce2c8c50824216bade5a160806b331 = L.circle(
+                [30.2200984955, -97.7490463257],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_b69abb97404849f2969e37d34ea0d2db = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b8c94800693e4c7e85bf27cb843d018e = $('<div id="html_b8c94800693e4c7e85bf27cb843d018e" style="width: 100.0%; height: 100.0%;">73301.0</div>')[0];
+                popup_b69abb97404849f2969e37d34ea0d2db.setContent(html_b8c94800693e4c7e85bf27cb843d018e);
+            
+
+            circle_37ce2c8c50824216bade5a160806b331.bindPopup(popup_b69abb97404849f2969e37d34ea0d2db)
+            ;
+
+            
+        
+    
+
+            var circle_5706ef753d7741919e389f1a897b7ed9 = L.circle(
+                [30.2010156748, -97.6652451174],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_567c8cc3a0d34fd8ace97e9c60fe538d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8c8dfe6346504aeaa50d5ae58e2dbe48 = $('<div id="html_8c8dfe6346504aeaa50d5ae58e2dbe48" style="width: 100.0%; height: 100.0%;">78617.0</div>')[0];
+                popup_567c8cc3a0d34fd8ace97e9c60fe538d.setContent(html_8c8dfe6346504aeaa50d5ae58e2dbe48);
+            
+
+            circle_5706ef753d7741919e389f1a897b7ed9.bindPopup(popup_567c8cc3a0d34fd8ace97e9c60fe538d)
+            ;
+
+            
+        
+    
+
+            var circle_fd774ec364f445edb18147fe116a2d31 = L.circle(
+                [30.273205, -97.800709],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_3d9ad8b656264ab38562c843ecd39bf0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_73ee4651ed28400fa162837295552247 = $('<div id="html_73ee4651ed28400fa162837295552247" style="width: 100.0%; height: 100.0%;">78646.0</div>')[0];
+                popup_3d9ad8b656264ab38562c843ecd39bf0.setContent(html_73ee4651ed28400fa162837295552247);
+            
+
+            circle_fd774ec364f445edb18147fe116a2d31.bindPopup(popup_3d9ad8b656264ab38562c843ecd39bf0)
+            ;
+
+            
+        
+    
+
+            var circle_c8d5c83945bf4e6f8e8d30e4fdabed4a = L.circle(
+                [30.4535635, -97.6665755],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_9bd5ed1625c64c01a1ab55072db4f613 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0f50b321a4174d2d98a4ff4311ea3745 = $('<div id="html_0f50b321a4174d2d98a4ff4311ea3745" style="width: 100.0%; height: 100.0%;">78660.0</div>')[0];
+                popup_9bd5ed1625c64c01a1ab55072db4f613.setContent(html_0f50b321a4174d2d98a4ff4311ea3745);
+            
+
+            circle_c8d5c83945bf4e6f8e8d30e4fdabed4a.bindPopup(popup_9bd5ed1625c64c01a1ab55072db4f613)
+            ;
+
+            
+        
+    
+
+            var circle_fc90be0ec3bc4dc5852d8aec9948a1e0 = L.circle(
+                [30.2672377091, -97.7413251617],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3090.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_b79b0380596f442089ac4f8cbf7af4c8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_84a348e0418441dcb7772724b3c3c4f6 = $('<div id="html_84a348e0418441dcb7772724b3c3c4f6" style="width: 100.0%; height: 100.0%;">78701.0</div>')[0];
+                popup_b79b0380596f442089ac4f8cbf7af4c8.setContent(html_84a348e0418441dcb7772724b3c3c4f6);
+            
+
+            circle_fc90be0ec3bc4dc5852d8aec9948a1e0.bindPopup(popup_b79b0380596f442089ac4f8cbf7af4c8)
+            ;
+
+            
+        
+    
+
+            var circle_48f1b194c23b438b931290be2c8ca518 = L.circle(
+                [30.265719941, -97.7219893078],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1095.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_1006c3c53a964153bdb880f1c28ca501 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_075d18a961d9438aaf0c01835d58125b = $('<div id="html_075d18a961d9438aaf0c01835d58125b" style="width: 100.0%; height: 100.0%;">78702.0</div>')[0];
+                popup_1006c3c53a964153bdb880f1c28ca501.setContent(html_075d18a961d9438aaf0c01835d58125b);
+            
+
+            circle_48f1b194c23b438b931290be2c8ca518.bindPopup(popup_1006c3c53a964153bdb880f1c28ca501)
+            ;
+
+            
+        
+    
+
+            var circle_6f5dba8a5c1744e6b0d422202157de09 = L.circle(
+                [30.27413, -97.76333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 340.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_86ca2a70f85f4d7ca507157cc9281ac9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2a9e71d223854f21ac10e8a8e12a6bfe = $('<div id="html_2a9e71d223854f21ac10e8a8e12a6bfe" style="width: 100.0%; height: 100.0%;">78703.0</div>')[0];
+                popup_86ca2a70f85f4d7ca507157cc9281ac9.setContent(html_2a9e71d223854f21ac10e8a8e12a6bfe);
+            
+
+            circle_6f5dba8a5c1744e6b0d422202157de09.bindPopup(popup_86ca2a70f85f4d7ca507157cc9281ac9)
+            ;
+
+            
+        
+    
+
+            var circle_f33565c7f22c473ab4586428e122ea20 = L.circle(
+                [30.2580505657, -97.7540391999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 445.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_10c6a72ae59d47188b5503f25975135c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_33f25629f06d41229da3bce1c1da745e = $('<div id="html_33f25629f06d41229da3bce1c1da745e" style="width: 100.0%; height: 100.0%;">78704.0</div>')[0];
+                popup_10c6a72ae59d47188b5503f25975135c.setContent(html_33f25629f06d41229da3bce1c1da745e);
+            
+
+            circle_f33565c7f22c473ab4586428e122ea20.bindPopup(popup_10c6a72ae59d47188b5503f25975135c)
+            ;
+
+            
+        
+    
+
+            var circle_0c3ff7684f994c89b07791b9ae825e4b = L.circle(
+                [30.28783, -97.7482],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1480.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_34c7ac0835264fc8baf57f4063788442 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_921a0e456d364006890fac72c16cf9f7 = $('<div id="html_921a0e456d364006890fac72c16cf9f7" style="width: 100.0%; height: 100.0%;">78705.0</div>')[0];
+                popup_34c7ac0835264fc8baf57f4063788442.setContent(html_921a0e456d364006890fac72c16cf9f7);
+            
+
+            circle_0c3ff7684f994c89b07791b9ae825e4b.bindPopup(popup_34c7ac0835264fc8baf57f4063788442)
+            ;
+
+            
+        
+    
+
+            var circle_43d9e391c09c4035a9cd284e8582259e = L.circle(
+                [30.4942481642, -97.7736608707],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 110.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_08579d9a69074ec0920a058936d10cf8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7984fc2438bf4d3fa9f406f9404bb4c7 = $('<div id="html_7984fc2438bf4d3fa9f406f9404bb4c7" style="width: 100.0%; height: 100.0%;">78717.0</div>')[0];
+                popup_08579d9a69074ec0920a058936d10cf8.setContent(html_7984fc2438bf4d3fa9f406f9404bb4c7);
+            
+
+            circle_43d9e391c09c4035a9cd284e8582259e.bindPopup(popup_08579d9a69074ec0920a058936d10cf8)
+            ;
+
+            
+        
+    
+
+            var circle_a1143decc8a544cc8d016ff4745839eb = L.circle(
+                [30.2021457046, -97.6677781234],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 95.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_fc65ebb1a9c74130bb188601bf36d655 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_93485f2a562a464ebd6f5769c69ddb36 = $('<div id="html_93485f2a562a464ebd6f5769c69ddb36" style="width: 100.0%; height: 100.0%;">78719.0</div>')[0];
+                popup_fc65ebb1a9c74130bb188601bf36d655.setContent(html_93485f2a562a464ebd6f5769c69ddb36);
+            
+
+            circle_a1143decc8a544cc8d016ff4745839eb.bindPopup(popup_fc65ebb1a9c74130bb188601bf36d655)
+            ;
+
+            
+        
+    
+
+            var circle_eaf6d7c3eaa1488d94acfc06b4029722 = L.circle(
+                [30.2795716, -97.68159],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_5ace059297bf4d9690a2f38f8ffb33fd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_869ef949425047ff8d6f554225d000cb = $('<div id="html_869ef949425047ff8d6f554225d000cb" style="width: 100.0%; height: 100.0%;">78721.0</div>')[0];
+                popup_5ace059297bf4d9690a2f38f8ffb33fd.setContent(html_869ef949425047ff8d6f554225d000cb);
+            
+
+            circle_eaf6d7c3eaa1488d94acfc06b4029722.bindPopup(popup_5ace059297bf4d9690a2f38f8ffb33fd)
+            ;
+
+            
+        
+    
+
+            var circle_d1ae04d796dc4e9b9c9e2ffccb1e1bab = L.circle(
+                [30.2846205, -97.70491],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 195.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_14a1de79735c4c1b9d1eecae11368a59 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ed7312eaf9864f72b941ae805660fdc0 = $('<div id="html_ed7312eaf9864f72b941ae805660fdc0" style="width: 100.0%; height: 100.0%;">78722.0</div>')[0];
+                popup_14a1de79735c4c1b9d1eecae11368a59.setContent(html_ed7312eaf9864f72b941ae805660fdc0);
+            
+
+            circle_d1ae04d796dc4e9b9c9e2ffccb1e1bab.bindPopup(popup_14a1de79735c4c1b9d1eecae11368a59)
+            ;
+
+            
+        
+    
+
+            var circle_1568619150004901805b4240982df9bf = L.circle(
+                [30.3014873386, -97.7051964666],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 280.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_0a72b396307344beb79145431c06de10 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dbaa43bfe9b847e48df3eecc9243e4f6 = $('<div id="html_dbaa43bfe9b847e48df3eecc9243e4f6" style="width: 100.0%; height: 100.0%;">78723.0</div>')[0];
+                popup_0a72b396307344beb79145431c06de10.setContent(html_dbaa43bfe9b847e48df3eecc9243e4f6);
+            
+
+            circle_1568619150004901805b4240982df9bf.bindPopup(popup_0a72b396307344beb79145431c06de10)
+            ;
+
+            
+        
+    
+
+            var circle_3a1454a9b4ae4d38a96d53b8383c116a = L.circle(
+                [30.29005, -97.62819],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 40.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_3aecde8dc42543088e6f674d76003637 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_caf24802ff1443f8b62fc3f427f1cbbf = $('<div id="html_caf24802ff1443f8b62fc3f427f1cbbf" style="width: 100.0%; height: 100.0%;">78724.0</div>')[0];
+                popup_3aecde8dc42543088e6f674d76003637.setContent(html_caf24802ff1443f8b62fc3f427f1cbbf);
+            
+
+            circle_3a1454a9b4ae4d38a96d53b8383c116a.bindPopup(popup_3aecde8dc42543088e6f674d76003637)
+            ;
+
+            
+        
+    
+
+            var circle_6d383a065a704b47af47693bfd09ef7a = L.circle(
+                [30.418793015, -97.8483083006],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 85.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_87692fbbce664e8a99d4ec889230d312 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_58748ac1b7da4072bff16503836534b2 = $('<div id="html_58748ac1b7da4072bff16503836534b2" style="width: 100.0%; height: 100.0%;">78726.0</div>')[0];
+                popup_87692fbbce664e8a99d4ec889230d312.setContent(html_58748ac1b7da4072bff16503836534b2);
+            
+
+            circle_6d383a065a704b47af47693bfd09ef7a.bindPopup(popup_87692fbbce664e8a99d4ec889230d312)
+            ;
+
+            
+        
+    
+
+            var circle_aa97f075110042499c1b745ba13e252d = L.circle(
+                [30.4261645227, -97.7260096844],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 80.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_06e9d33de6e04ce2aa06cd2e29a4584e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2d50d5331c42412781ceb7efe3388ec2 = $('<div id="html_2d50d5331c42412781ceb7efe3388ec2" style="width: 100.0%; height: 100.0%;">78727.0</div>')[0];
+                popup_06e9d33de6e04ce2aa06cd2e29a4584e.setContent(html_2d50d5331c42412781ceb7efe3388ec2);
+            
+
+            circle_aa97f075110042499c1b745ba13e252d.bindPopup(popup_06e9d33de6e04ce2aa06cd2e29a4584e)
+            ;
+
+            
+        
+    
+
+            var circle_77d0ee24723e40c49b84383c6125ecde = L.circle(
+                [30.4393654219, -97.6817185595],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 90.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_3eb733006efb4af5913779c460103746 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_74cab38575934b639b68a4666fcb073c = $('<div id="html_74cab38575934b639b68a4666fcb073c" style="width: 100.0%; height: 100.0%;">78728.0</div>')[0];
+                popup_3eb733006efb4af5913779c460103746.setContent(html_74cab38575934b639b68a4666fcb073c);
+            
+
+            circle_77d0ee24723e40c49b84383c6125ecde.bindPopup(popup_3eb733006efb4af5913779c460103746)
+            ;
+
+            
+        
+    
+
+            var circle_a1a6dfebed9d435d8a6fd77ef7095cbe = L.circle(
+                [30.4504173333, -97.7803613333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 110.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_8711f08970334675aa978a0c2a3ef002 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_238d533a1d884a72a1ef1dfc85b2a4a3 = $('<div id="html_238d533a1d884a72a1ef1dfc85b2a4a3" style="width: 100.0%; height: 100.0%;">78729.0</div>')[0];
+                popup_8711f08970334675aa978a0c2a3ef002.setContent(html_238d533a1d884a72a1ef1dfc85b2a4a3);
+            
+
+            circle_a1a6dfebed9d435d8a6fd77ef7095cbe.bindPopup(popup_8711f08970334675aa978a0c2a3ef002)
+            ;
+
+            
+        
+    
+
+            var circle_9d7f75f2fd124103b4fe274c0ee2f295 = L.circle(
+                [30.355045, -97.755592],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 125.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_6c49266f18c04c5da0840515d1370056 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9e2b80dcbe114a0082d49ece3b982e32 = $('<div id="html_9e2b80dcbe114a0082d49ece3b982e32" style="width: 100.0%; height: 100.0%;">78731.0</div>')[0];
+                popup_6c49266f18c04c5da0840515d1370056.setContent(html_9e2b80dcbe114a0082d49ece3b982e32);
+            
+
+            circle_9d7f75f2fd124103b4fe274c0ee2f295.bindPopup(popup_6c49266f18c04c5da0840515d1370056)
+            ;
+
+            
+        
+    
+
+            var circle_1c6278e6126a46089af64e916e4b204a = L.circle(
+                [30.3832662283, -97.8862275589],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 40.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_fe1d00d6dc3a4405a30045163e83a11e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f80805f984d64c7a9bc17f99900dfac8 = $('<div id="html_f80805f984d64c7a9bc17f99900dfac8" style="width: 100.0%; height: 100.0%;">78732.0</div>')[0];
+                popup_fe1d00d6dc3a4405a30045163e83a11e.setContent(html_f80805f984d64c7a9bc17f99900dfac8);
+            
+
+            circle_1c6278e6126a46089af64e916e4b204a.bindPopup(popup_fe1d00d6dc3a4405a30045163e83a11e)
+            ;
+
+            
+        
+    
+
+            var circle_af8cf80bb9d74f83875f89cd33b54e99 = L.circle(
+                [30.3257676052, -97.8820037842],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_780f4cffe6f0491f99aa309e31272212 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_97b4a41908064e9a85cb7644b9a54275 = $('<div id="html_97b4a41908064e9a85cb7644b9a54275" style="width: 100.0%; height: 100.0%;">78733.0</div>')[0];
+                popup_780f4cffe6f0491f99aa309e31272212.setContent(html_97b4a41908064e9a85cb7644b9a54275);
+            
+
+            circle_af8cf80bb9d74f83875f89cd33b54e99.bindPopup(popup_780f4cffe6f0491f99aa309e31272212)
+            ;
+
+            
+        
+    
+
+            var circle_ef0c47be0d96490695f1b46e8c68d14d = L.circle(
+                [30.3784125, -97.9529936],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_ac4ce0407df24762a963c9fb4834ab3b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f96818027e2d44a690fe5118320abe9c = $('<div id="html_f96818027e2d44a690fe5118320abe9c" style="width: 100.0%; height: 100.0%;">78734.0</div>')[0];
+                popup_ac4ce0407df24762a963c9fb4834ab3b.setContent(html_f96818027e2d44a690fe5118320abe9c);
+            
+
+            circle_ef0c47be0d96490695f1b46e8c68d14d.bindPopup(popup_ac4ce0407df24762a963c9fb4834ab3b)
+            ;
+
+            
+        
+    
+
+            var circle_3e4ec0fe8b084097972ca573074e2b51 = L.circle(
+                [30.2363456599, -97.8561775191],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 135.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_23014806a049434d9daaca54b0679d0d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b6240778aaea49e2b8a203562f2934a8 = $('<div id="html_b6240778aaea49e2b8a203562f2934a8" style="width: 100.0%; height: 100.0%;">78735.0</div>')[0];
+                popup_23014806a049434d9daaca54b0679d0d.setContent(html_b6240778aaea49e2b8a203562f2934a8);
+            
+
+            circle_3e4ec0fe8b084097972ca573074e2b51.bindPopup(popup_23014806a049434d9daaca54b0679d0d)
+            ;
+
+            
+        
+    
+
+            var circle_281251e083db4c27b097ec401a556c15 = L.circle(
+                [30.2312371514, -97.9273119884],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 35.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_2113d816978640b1a3f3ba5701fc9ed2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6903571524064d2d85eed97a0da893fd = $('<div id="html_6903571524064d2d85eed97a0da893fd" style="width: 100.0%; height: 100.0%;">78736.0</div>')[0];
+                popup_2113d816978640b1a3f3ba5701fc9ed2.setContent(html_6903571524064d2d85eed97a0da893fd);
+            
+
+            circle_281251e083db4c27b097ec401a556c15.bindPopup(popup_2113d816978640b1a3f3ba5701fc9ed2)
+            ;
+
+            
+        
+    
+
+            var circle_299e4dbc67484f19b92fb44cbb5c875d = L.circle(
+                [30.2106547082, -97.9688636691],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_d275248b339544a284e15ceffe93c5a7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5813c5b968044dd1aa5188eb8c4579bf = $('<div id="html_5813c5b968044dd1aa5188eb8c4579bf" style="width: 100.0%; height: 100.0%;">78737.0</div>')[0];
+                popup_d275248b339544a284e15ceffe93c5a7.setContent(html_5813c5b968044dd1aa5188eb8c4579bf);
+            
+
+            circle_299e4dbc67484f19b92fb44cbb5c875d.bindPopup(popup_d275248b339544a284e15ceffe93c5a7)
+            ;
+
+            
+        
+    
+
+            var circle_344da5632a774694b2174a7682bb0d9a = L.circle(
+                [30.3085595454, -97.9413680134],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 155.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_80fa35732583427c96a88495af46c880 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1609530abe2347bd8503f688b3e870ca = $('<div id="html_1609530abe2347bd8503f688b3e870ca" style="width: 100.0%; height: 100.0%;">78738.0</div>')[0];
+                popup_80fa35732583427c96a88495af46c880.setContent(html_1609530abe2347bd8503f688b3e870ca);
+            
+
+            circle_344da5632a774694b2174a7682bb0d9a.bindPopup(popup_80fa35732583427c96a88495af46c880)
+            ;
+
+            
+        
+    
+
+            var circle_e7feb9f7a9ac48c981b3ba96c990bfe1 = L.circle(
+                [30.199722, -97.869529],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_f12305db88d2490aa32285d634c21ed9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f8e310722c5b46989c4456ca16d68bb0 = $('<div id="html_f8e310722c5b46989c4456ca16d68bb0" style="width: 100.0%; height: 100.0%;">78739.0</div>')[0];
+                popup_f12305db88d2490aa32285d634c21ed9.setContent(html_f8e310722c5b46989c4456ca16d68bb0);
+            
+
+            circle_e7feb9f7a9ac48c981b3ba96c990bfe1.bindPopup(popup_f12305db88d2490aa32285d634c21ed9)
+            ;
+
+            
+        
+    
+
+            var circle_363a9b03868c4e4198b1f0d1e2be778c = L.circle(
+                [30.24022, -97.72808],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 285.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_f7c5fa4b5d444c029afd85e5f3a31835 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_18bfabf8ce044c45aefeb13c7501b7c3 = $('<div id="html_18bfabf8ce044c45aefeb13c7501b7c3" style="width: 100.0%; height: 100.0%;">78741.0</div>')[0];
+                popup_f7c5fa4b5d444c029afd85e5f3a31835.setContent(html_18bfabf8ce044c45aefeb13c7501b7c3);
+            
+
+            circle_363a9b03868c4e4198b1f0d1e2be778c.bindPopup(popup_f7c5fa4b5d444c029afd85e5f3a31835)
+            ;
+
+            
+        
+    
+
+            var circle_5bfc8db07a6e41e7a90c81fec276c0dc = L.circle(
+                [30.2119300039, -97.7296185185],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 225.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_fc960744127749719db762e1b966618b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_82338847244f4a6889de653b5cf256fd = $('<div id="html_82338847244f4a6889de653b5cf256fd" style="width: 100.0%; height: 100.0%;">78744.0</div>')[0];
+                popup_fc960744127749719db762e1b966618b.setContent(html_82338847244f4a6889de653b5cf256fd);
+            
+
+            circle_5bfc8db07a6e41e7a90c81fec276c0dc.bindPopup(popup_fc960744127749719db762e1b966618b)
+            ;
+
+            
+        
+    
+
+            var circle_54e8e57a8035402c8716af602bcef410 = L.circle(
+                [30.2116873951, -97.7818623447],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 305.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_812cc31dd2d1494ba1bbfc328c7fdf11 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_84e34cc6b7064320a026e1180efbb6cf = $('<div id="html_84e34cc6b7064320a026e1180efbb6cf" style="width: 100.0%; height: 100.0%;">78745.0</div>')[0];
+                popup_812cc31dd2d1494ba1bbfc328c7fdf11.setContent(html_84e34cc6b7064320a026e1180efbb6cf);
+            
+
+            circle_54e8e57a8035402c8716af602bcef410.bindPopup(popup_812cc31dd2d1494ba1bbfc328c7fdf11)
+            ;
+
+            
+        
+    
+
+            var circle_5831eefac1574eac98d66e2be857c64e = L.circle(
+                [30.271544, -97.8057706667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 175.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_fd8fc61d204b4bd192b061e4d2a30c2d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1484e13e3a3a4dffb9271a1f1fffb26b = $('<div id="html_1484e13e3a3a4dffb9271a1f1fffb26b" style="width: 100.0%; height: 100.0%;">78746.0</div>')[0];
+                popup_fd8fc61d204b4bd192b061e4d2a30c2d.setContent(html_1484e13e3a3a4dffb9271a1f1fffb26b);
+            
+
+            circle_5831eefac1574eac98d66e2be857c64e.bindPopup(popup_fd8fc61d204b4bd192b061e4d2a30c2d)
+            ;
+
+            
+        
+    
+
+            var circle_e563273abb14430ebd0b576a5c21e5b4 = L.circle(
+                [30.1573804355, -97.744213379],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_aad256ccadec4a1e8ad7d2af2ceedf1f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f4c3e966553d4a179bc3345753af5d45 = $('<div id="html_f4c3e966553d4a179bc3345753af5d45" style="width: 100.0%; height: 100.0%;">78747.0</div>')[0];
+                popup_aad256ccadec4a1e8ad7d2af2ceedf1f.setContent(html_f4c3e966553d4a179bc3345753af5d45);
+            
+
+            circle_e563273abb14430ebd0b576a5c21e5b4.bindPopup(popup_aad256ccadec4a1e8ad7d2af2ceedf1f)
+            ;
+
+            
+        
+    
+
+            var circle_d1e851d05a05436ba98a1b638f30ed15 = L.circle(
+                [30.1710298328, -97.8264242718],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 140.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_cb6fcdf4374041daaedbe87aa6f34fc5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_26d35194a5a24696bedfcb014f16d256 = $('<div id="html_26d35194a5a24696bedfcb014f16d256" style="width: 100.0%; height: 100.0%;">78748.0</div>')[0];
+                popup_cb6fcdf4374041daaedbe87aa6f34fc5.setContent(html_26d35194a5a24696bedfcb014f16d256);
+            
+
+            circle_d1e851d05a05436ba98a1b638f30ed15.bindPopup(popup_cb6fcdf4374041daaedbe87aa6f34fc5)
+            ;
+
+            
+        
+    
+
+            var circle_7ccca7e5f48c404fa03f136a7a347ef3 = L.circle(
+                [30.2144402153, -97.8540094725],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 205.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_809cce6a401042cb935f9110437948c3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0639f037e08b4afca3de7724baf352a0 = $('<div id="html_0639f037e08b4afca3de7724baf352a0" style="width: 100.0%; height: 100.0%;">78749.0</div>')[0];
+                popup_809cce6a401042cb935f9110437948c3.setContent(html_0639f037e08b4afca3de7724baf352a0);
+            
+
+            circle_7ccca7e5f48c404fa03f136a7a347ef3.bindPopup(popup_809cce6a401042cb935f9110437948c3)
+            ;
+
+            
+        
+    
+
+            var circle_38a6a1266695427ca8f72f97f4c97223 = L.circle(
+                [30.4571215984, -97.799799305],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 180.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_a6c6fd6db57c452b8b1dfcfbe81020d1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c544907e939d4f00be7349407b51dc77 = $('<div id="html_c544907e939d4f00be7349407b51dc77" style="width: 100.0%; height: 100.0%;">78750.0</div>')[0];
+                popup_a6c6fd6db57c452b8b1dfcfbe81020d1.setContent(html_c544907e939d4f00be7349407b51dc77);
+            
+
+            circle_38a6a1266695427ca8f72f97f4c97223.bindPopup(popup_a6c6fd6db57c452b8b1dfcfbe81020d1)
+            ;
+
+            
+        
+    
+
+            var circle_308777ee39824211939922268a21c7f2 = L.circle(
+                [30.3134735968, -97.7221386484],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 310.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_7edc75092baa4eaab5d2e014b913457c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6c126d715b0b445cbb7f3bf11f021b33 = $('<div id="html_6c126d715b0b445cbb7f3bf11f021b33" style="width: 100.0%; height: 100.0%;">78751.0</div>')[0];
+                popup_7edc75092baa4eaab5d2e014b913457c.setContent(html_6c126d715b0b445cbb7f3bf11f021b33);
+            
+
+            circle_308777ee39824211939922268a21c7f2.bindPopup(popup_7edc75092baa4eaab5d2e014b913457c)
+            ;
+
+            
+        
+    
+
+            var circle_33124c2f080d49f2bd960972999e9779 = L.circle(
+                [30.3292980194, -97.6904373169],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 480.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_249f930ebaa4411e9ea1d2f3b379fd76 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_af65801f258a44e0b832c4aa93b96628 = $('<div id="html_af65801f258a44e0b832c4aa93b96628" style="width: 100.0%; height: 100.0%;">78752.0</div>')[0];
+                popup_249f930ebaa4411e9ea1d2f3b379fd76.setContent(html_af65801f258a44e0b832c4aa93b96628);
+            
+
+            circle_33124c2f080d49f2bd960972999e9779.bindPopup(popup_249f930ebaa4411e9ea1d2f3b379fd76)
+            ;
+
+            
+        
+    
+
+            var circle_01b398ba56fd4dc2845c21d56fe8dbb5 = L.circle(
+                [30.3889868, -97.6710889],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 280.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_408bde99a54848658ce6635b2965385e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bdcd3758f8424f0181eb1fa450d40b86 = $('<div id="html_bdcd3758f8424f0181eb1fa450d40b86" style="width: 100.0%; height: 100.0%;">78753.0</div>')[0];
+                popup_408bde99a54848658ce6635b2965385e.setContent(html_bdcd3758f8424f0181eb1fa450d40b86);
+            
+
+            circle_01b398ba56fd4dc2845c21d56fe8dbb5.bindPopup(popup_408bde99a54848658ce6635b2965385e)
+            ;
+
+            
+        
+    
+
+            var circle_b8256da223f74d3c867de55d34931846 = L.circle(
+                [30.3467650045, -97.672942706],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 50.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_be666a8355004c1ba0120b53ed46b9a9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9465dc82830e4d3a9963c02b05ed72c3 = $('<div id="html_9465dc82830e4d3a9963c02b05ed72c3" style="width: 100.0%; height: 100.0%;">78754.0</div>')[0];
+                popup_be666a8355004c1ba0120b53ed46b9a9.setContent(html_9465dc82830e4d3a9963c02b05ed72c3);
+            
+
+            circle_b8256da223f74d3c867de55d34931846.bindPopup(popup_be666a8355004c1ba0120b53ed46b9a9)
+            ;
+
+            
+        
+    
+
+            var circle_da0fb7f71e1449f593ed29cc4feed2dd = L.circle(
+                [30.35416, -97.75496],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_1ef50550de5d4a72a651601f3d1c0563 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_96826699291d4b7486efeb6b10a5e012 = $('<div id="html_96826699291d4b7486efeb6b10a5e012" style="width: 100.0%; height: 100.0%;">78755.0</div>')[0];
+                popup_1ef50550de5d4a72a651601f3d1c0563.setContent(html_96826699291d4b7486efeb6b10a5e012);
+            
+
+            circle_da0fb7f71e1449f593ed29cc4feed2dd.bindPopup(popup_1ef50550de5d4a72a651601f3d1c0563)
+            ;
+
+            
+        
+    
+
+            var circle_ad607398466c406fbc4ea5a49a03e094 = L.circle(
+                [30.3162955102, -97.7408760638],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 760.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_ffb9a3b1792e40fe93e607add07585b0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2d5d72e4670f4731a40d3f9ee2d98922 = $('<div id="html_2d5d72e4670f4731a40d3f9ee2d98922" style="width: 100.0%; height: 100.0%;">78756.0</div>')[0];
+                popup_ffb9a3b1792e40fe93e607add07585b0.setContent(html_2d5d72e4670f4731a40d3f9ee2d98922);
+            
+
+            circle_ad607398466c406fbc4ea5a49a03e094.bindPopup(popup_ffb9a3b1792e40fe93e607add07585b0)
+            ;
+
+            
+        
+    
+
+            var circle_fed2df10d7dd47268cc4f0d91e29238a = L.circle(
+                [30.3532503222, -97.7326846007],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 445.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_e4be6a15a16146779989891f157660cd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bb0aad2321b946dd8315bfaae136a013 = $('<div id="html_bb0aad2321b946dd8315bfaae136a013" style="width: 100.0%; height: 100.0%;">78757.0</div>')[0];
+                popup_e4be6a15a16146779989891f157660cd.setContent(html_bb0aad2321b946dd8315bfaae136a013);
+            
+
+            circle_fed2df10d7dd47268cc4f0d91e29238a.bindPopup(popup_e4be6a15a16146779989891f157660cd)
+            ;
+
+            
+        
+    
+
+            var circle_8e05c06665eb4b10ad01cabb54b90182 = L.circle(
+                [30.397837705, -97.7215615381],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 635.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_f818786664dc428893fb6f8f2406ceec = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_adc3d57eb224497398da6e4a8b8b4019 = $('<div id="html_adc3d57eb224497398da6e4a8b8b4019" style="width: 100.0%; height: 100.0%;">78758.0</div>')[0];
+                popup_f818786664dc428893fb6f8f2406ceec.setContent(html_adc3d57eb224497398da6e4a8b8b4019);
+            
+
+            circle_8e05c06665eb4b10ad01cabb54b90182.bindPopup(popup_f818786664dc428893fb6f8f2406ceec)
+            ;
+
+            
+        
+    
+
+            var circle_b11c54ca8c644d38a954fdc6e7d28c93 = L.circle(
+                [30.4074304119, -97.7486335412],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 285.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_5fe297af7ac24242a6c20ac30e4357d1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3c2188d566db41b7b68233251744c045 = $('<div id="html_3c2188d566db41b7b68233251744c045" style="width: 100.0%; height: 100.0%;">78759.0</div>')[0];
+                popup_5fe297af7ac24242a6c20ac30e4357d1.setContent(html_3c2188d566db41b7b68233251744c045);
+            
+
+            circle_b11c54ca8c644d38a954fdc6e7d28c93.bindPopup(popup_5fe297af7ac24242a6c20ac30e4357d1)
+            ;
+
+            
+        
+    
+
+            var circle_192f8bfac0a0425888422ac11781c8b3 = L.circle(
+                [30.266944, -97.742778],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_d252170864cc4d24866047c6b7b958fb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b4c5720373fc4489bce4f2eec7ab8164 = $('<div id="html_b4c5720373fc4489bce4f2eec7ab8164" style="width: 100.0%; height: 100.0%;">78798.0</div>')[0];
+                popup_d252170864cc4d24866047c6b7b958fb.setContent(html_b4c5720373fc4489bce4f2eec7ab8164);
+            
+
+            circle_192f8bfac0a0425888422ac11781c8b3.bindPopup(popup_d252170864cc4d24866047c6b7b958fb)
+            ;
+
+            
+        
+    
+
+            var circle_ba8d9382a70f4c61be3f11f060fa4cd4 = L.circle(
+                [30.52913, -97.683],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_2c63a3d36baa4bbe87f27b47accf2e41 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2a116d6952ef4456901fc7a3fb5e1edc = $('<div id="html_2a116d6952ef4456901fc7a3fb5e1edc" style="width: 100.0%; height: 100.0%;">78664.0</div>')[0];
+                popup_2c63a3d36baa4bbe87f27b47accf2e41.setContent(html_2a116d6952ef4456901fc7a3fb5e1edc);
+            
+
+            circle_ba8d9382a70f4c61be3f11f060fa4cd4.bindPopup(popup_2c63a3d36baa4bbe87f27b47accf2e41)
+            ;
+
+            
+        
+    
+
+            var circle_39193eb1800644d980f64bd4166c96f9 = L.circle(
+                [30.2861233893, -97.7410697937],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_9d0b4222c2c1432da253b14d11f74dbd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b027ac498ef946a69c6fd244f97b5731 = $('<div id="html_b027ac498ef946a69c6fd244f97b5731" style="width: 100.0%; height: 100.0%;">78713.0</div>')[0];
+                popup_9d0b4222c2c1432da253b14d11f74dbd.setContent(html_b027ac498ef946a69c6fd244f97b5731);
+            
+
+            circle_39193eb1800644d980f64bd4166c96f9.bindPopup(popup_9d0b4222c2c1432da253b14d11f74dbd)
+            ;
+
+            
+        
+    
+
+            var circle_22ede749ec5f424a93fa614b8c07df6a = L.circle(
+                [30.2286097, -97.6639062],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_eeedce41da864fb1856abfc55e5d7716 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_11f872de1bd846e7a47c95ee4398976a = $('<div id="html_11f872de1bd846e7a47c95ee4398976a" style="width: 100.0%; height: 100.0%;">78742.0</div>')[0];
+                popup_eeedce41da864fb1856abfc55e5d7716.setContent(html_11f872de1bd846e7a47c95ee4398976a);
+            
+
+            circle_22ede749ec5f424a93fa614b8c07df6a.bindPopup(popup_eeedce41da864fb1856abfc55e5d7716)
+            ;
+
+            
+        
+    
+
+            var circle_554a1374234d4d3cb4e58a0b7b6cecc7 = L.circle(
+                [30.298709, -97.725207],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 20.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_adfe184ca930450e911746bc77ae5e4f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d74caf2cdc2c4b1e9d04324407a8f7d8 = $('<div id="html_d74caf2cdc2c4b1e9d04324407a8f7d8" style="width: 100.0%; height: 100.0%;">78765.0</div>')[0];
+                popup_adfe184ca930450e911746bc77ae5e4f.setContent(html_d74caf2cdc2c4b1e9d04324407a8f7d8);
+            
+
+            circle_554a1374234d4d3cb4e58a0b7b6cecc7.bindPopup(popup_adfe184ca930450e911746bc77ae5e4f)
+            ;
+
+            
+        
+    
+
+            var circle_d6b3186ceebf4423b7abdb1aeede1182 = L.circle(
+                [30.2675569845, -97.7409903101],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 55.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+            
+    
+            var popup_33f181b9274b4f95b815f9e9c481214d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ccb59e1f40604854911529eee4436875 = $('<div id="html_ccb59e1f40604854911529eee4436875" style="width: 100.0%; height: 100.0%;">78799.0</div>')[0];
+                popup_33f181b9274b4f95b815f9e9c481214d.setContent(html_ccb59e1f40604854911529eee4436875);
+            
+
+            circle_d6b3186ceebf4423b7abdb1aeede1182.bindPopup(popup_33f181b9274b4f95b815f9e9c481214d)
+            ;
+
+            
+        
+    
+        var marker_8ddd2cac3f4d4d7f9f115c8bd47b60dc = L.marker(
+            [30.2200984955, -97.7490463257],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    function vega_parse(spec, div) {
+            vg.parse.spec(spec, function(chart) { chart({el:div}).update(); });}
+    
+            var popup_855fb7413f424e35b1a0aef9b74b53bd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_df2bf1cd21ba4369834e6ef98f155a80 = $('             <div id="vega_df2bf1cd21ba4369834e6ef98f155a80"></div>             ')[0];
+                popup_855fb7413f424e35b1a0aef9b74b53bd.setContent(vega_df2bf1cd21ba4369834e6ef98f155a80);
+            
+
+            marker_8ddd2cac3f4d4d7f9f115c8bd47b60dc.bindPopup(popup_855fb7413f424e35b1a0aef9b74b53bd)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 9.0}, {"col": "Rating", "idx": "Bars", "val": 0.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_df2bf1cd21ba4369834e6ef98f155a80);
+            
+            
+        
+    
+        marker_8ddd2cac3f4d4d7f9f115c8bd47b60dc.bindTooltip(
+            '<div>'
+            + '73301' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_7e7410cc1c5c49638ab8fb5bee1c31bb = L.marker(
+            [30.2010156748, -97.6652451174],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_d30b32f62da84c95869800e7acc028a5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_9f2b9d47b1154780a6234129a325d766 = $('             <div id="vega_9f2b9d47b1154780a6234129a325d766"></div>             ')[0];
+                popup_d30b32f62da84c95869800e7acc028a5.setContent(vega_9f2b9d47b1154780a6234129a325d766);
+            
+
+            marker_7e7410cc1c5c49638ab8fb5bee1c31bb.bindPopup(popup_d30b32f62da84c95869800e7acc028a5)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.0}, {"col": "Rating", "idx": "Bars", "val": 6.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_9f2b9d47b1154780a6234129a325d766);
+            
+            
+        
+    
+        marker_7e7410cc1c5c49638ab8fb5bee1c31bb.bindTooltip(
+            '<div>'
+            + '78617' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_052e1c16eea7498a9b86c71cac42e05a = L.marker(
+            [30.273205, -97.800709],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_a9cbdf0a54084d8a94064995d0d66f51 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_8a5cf5d7575e4421b7bad58108a4aaf4 = $('             <div id="vega_8a5cf5d7575e4421b7bad58108a4aaf4"></div>             ')[0];
+                popup_a9cbdf0a54084d8a94064995d0d66f51.setContent(vega_8a5cf5d7575e4421b7bad58108a4aaf4);
+            
+
+            marker_052e1c16eea7498a9b86c71cac42e05a.bindPopup(popup_a9cbdf0a54084d8a94064995d0d66f51)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 9.0}, {"col": "Rating", "idx": "Bars", "val": 0.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_8a5cf5d7575e4421b7bad58108a4aaf4);
+            
+            
+        
+    
+        marker_052e1c16eea7498a9b86c71cac42e05a.bindTooltip(
+            '<div>'
+            + '78646' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_9103c62222ba43e4b20b878f03a348f8 = L.marker(
+            [30.4535635, -97.6665755],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_903bf2ea9f20402daa756720851c0062 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_ea8ac7b35d3d4fd0b1b8dcf7e0378d90 = $('             <div id="vega_ea8ac7b35d3d4fd0b1b8dcf7e0378d90"></div>             ')[0];
+                popup_903bf2ea9f20402daa756720851c0062.setContent(vega_ea8ac7b35d3d4fd0b1b8dcf7e0378d90);
+            
+
+            marker_9103c62222ba43e4b20b878f03a348f8.bindPopup(popup_903bf2ea9f20402daa756720851c0062)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 6.25}, {"col": "Rating", "idx": "Bars", "val": 6.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_ea8ac7b35d3d4fd0b1b8dcf7e0378d90);
+            
+            
+        
+    
+        marker_9103c62222ba43e4b20b878f03a348f8.bindTooltip(
+            '<div>'
+            + '78660' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_aa8831d5a58148e39b8675a946701dc9 = L.marker(
+            [30.2672377091, -97.7413251617],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_eb1ab22708f4475b8f79b56fb8cf0bec = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_e522fbbdad81459091cb71a704e24f5e = $('             <div id="vega_e522fbbdad81459091cb71a704e24f5e"></div>             ')[0];
+                popup_eb1ab22708f4475b8f79b56fb8cf0bec.setContent(vega_e522fbbdad81459091cb71a704e24f5e);
+            
+
+            marker_aa8831d5a58148e39b8675a946701dc9.bindPopup(popup_eb1ab22708f4475b8f79b56fb8cf0bec)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.373134328358207}, {"col": "Rating", "idx": "Bars", "val": 8.530927835051546}, {"col": "Rating", "idx": "Clubs", "val": 6.753363228699553}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_e522fbbdad81459091cb71a704e24f5e);
+            
+            
+        
+    
+        marker_aa8831d5a58148e39b8675a946701dc9.bindTooltip(
+            '<div>'
+            + '78701' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_28be723a254242189bdd2ff885889eb5 = L.marker(
+            [30.265719941, -97.7219893078],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_5021514896604d2cbc4df871a1f6c1e3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_fad1cf155dde4234aaacf570c35e8da7 = $('             <div id="vega_fad1cf155dde4234aaacf570c35e8da7"></div>             ')[0];
+                popup_5021514896604d2cbc4df871a1f6c1e3.setContent(vega_fad1cf155dde4234aaacf570c35e8da7);
+            
+
+            marker_28be723a254242189bdd2ff885889eb5.bindPopup(popup_5021514896604d2cbc4df871a1f6c1e3)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.737373737373737}, {"col": "Rating", "idx": "Bars", "val": 8.735849056603774}, {"col": "Rating", "idx": "Clubs", "val": 8.142857142857142}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_fad1cf155dde4234aaacf570c35e8da7);
+            
+            
+        
+    
+        marker_28be723a254242189bdd2ff885889eb5.bindTooltip(
+            '<div>'
+            + '78702' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_1f40e6b917924385946e5bf510b8e473 = L.marker(
+            [30.27413, -97.76333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_a052f86dbae2413f9243d0eb4116d84f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_0dcb41d9a43d48f7a9241c60c74d4f28 = $('             <div id="vega_0dcb41d9a43d48f7a9241c60c74d4f28"></div>             ')[0];
+                popup_a052f86dbae2413f9243d0eb4116d84f.setContent(vega_0dcb41d9a43d48f7a9241c60c74d4f28);
+            
+
+            marker_1f40e6b917924385946e5bf510b8e473.bindPopup(popup_a052f86dbae2413f9243d0eb4116d84f)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 7.854166666666667}, {"col": "Rating", "idx": "Bars", "val": 7.7894736842105265}, {"col": "Rating", "idx": "Clubs", "val": 9.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_0dcb41d9a43d48f7a9241c60c74d4f28);
+            
+            
+        
+    
+        marker_1f40e6b917924385946e5bf510b8e473.bindTooltip(
+            '<div>'
+            + '78703' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_eaff40dc2bee468ca4f15f6f8bb54590 = L.marker(
+            [30.2580505657, -97.7540391999],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_9a1260ab844742f7b45e9c7f748763f5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_9e684e0d6f764f649377702d0a8a2b77 = $('             <div id="vega_9e684e0d6f764f649377702d0a8a2b77"></div>             ')[0];
+                popup_9a1260ab844742f7b45e9c7f748763f5.setContent(vega_9e684e0d6f764f649377702d0a8a2b77);
+            
+
+            marker_eaff40dc2bee468ca4f15f6f8bb54590.bindPopup(popup_9a1260ab844742f7b45e9c7f748763f5)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.69047619047619}, {"col": "Rating", "idx": "Bars", "val": 7.764705882352942}, {"col": "Rating", "idx": "Clubs", "val": 8.384615384615385}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_9e684e0d6f764f649377702d0a8a2b77);
+            
+            
+        
+    
+        marker_eaff40dc2bee468ca4f15f6f8bb54590.bindTooltip(
+            '<div>'
+            + '78704' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_9c1470cc535348c58e29f589b0036018 = L.marker(
+            [30.28783, -97.7482],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_77263e2f6b904820a176890601155e24 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_3860ad4abcff43f0bb61187e315e417e = $('             <div id="vega_3860ad4abcff43f0bb61187e315e417e"></div>             ')[0];
+                popup_77263e2f6b904820a176890601155e24.setContent(vega_3860ad4abcff43f0bb61187e315e417e);
+            
+
+            marker_9c1470cc535348c58e29f589b0036018.bindPopup(popup_77263e2f6b904820a176890601155e24)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.776978417266188}, {"col": "Rating", "idx": "Bars", "val": 7.485915492957746}, {"col": "Rating", "idx": "Clubs", "val": 10.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_3860ad4abcff43f0bb61187e315e417e);
+            
+            
+        
+    
+        marker_9c1470cc535348c58e29f589b0036018.bindTooltip(
+            '<div>'
+            + '78705' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_d988eb5982b748ea86be57f9570f080f = L.marker(
+            [30.4942481642, -97.7736608707],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_6e02ba48a08248a2b06e47ab17b61a86 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_493abd4e28ee47cbbdb32777579ba0a0 = $('             <div id="vega_493abd4e28ee47cbbdb32777579ba0a0"></div>             ')[0];
+                popup_6e02ba48a08248a2b06e47ab17b61a86.setContent(vega_493abd4e28ee47cbbdb32777579ba0a0);
+            
+
+            marker_d988eb5982b748ea86be57f9570f080f.bindPopup(popup_6e02ba48a08248a2b06e47ab17b61a86)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 6.526315789473684}, {"col": "Rating", "idx": "Bars", "val": 7.666666666666667}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_493abd4e28ee47cbbdb32777579ba0a0);
+            
+            
+        
+    
+        marker_d988eb5982b748ea86be57f9570f080f.bindTooltip(
+            '<div>'
+            + '78717' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_028f506a42ed42f6a89f12ffd1e2567b = L.marker(
+            [30.2021457046, -97.6677781234],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_097de4588dd34fc1a175dd4927c8c48c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_5bd689e9e32b41f987eb159970f9bd08 = $('             <div id="vega_5bd689e9e32b41f987eb159970f9bd08"></div>             ')[0];
+                popup_097de4588dd34fc1a175dd4927c8c48c.setContent(vega_5bd689e9e32b41f987eb159970f9bd08);
+            
+
+            marker_028f506a42ed42f6a89f12ffd1e2567b.bindPopup(popup_097de4588dd34fc1a175dd4927c8c48c)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 5.727272727272728}, {"col": "Rating", "idx": "Bars", "val": 5.125}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_5bd689e9e32b41f987eb159970f9bd08);
+            
+            
+        
+    
+        marker_028f506a42ed42f6a89f12ffd1e2567b.bindTooltip(
+            '<div>'
+            + '78719' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_3e0ea2c0db894485873ad6d735201146 = L.marker(
+            [30.2795716, -97.68159],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_c650b060869c4a58acec9234708c88d3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_f994d486bb474bcfa4a271efdda4fa9a = $('             <div id="vega_f994d486bb474bcfa4a271efdda4fa9a"></div>             ')[0];
+                popup_c650b060869c4a58acec9234708c88d3.setContent(vega_f994d486bb474bcfa4a271efdda4fa9a);
+            
+
+            marker_3e0ea2c0db894485873ad6d735201146.bindPopup(popup_c650b060869c4a58acec9234708c88d3)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.6}, {"col": "Rating", "idx": "Bars", "val": 8.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_f994d486bb474bcfa4a271efdda4fa9a);
+            
+            
+        
+    
+        marker_3e0ea2c0db894485873ad6d735201146.bindTooltip(
+            '<div>'
+            + '78721' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_79d845530e9b45b19aa222a15cedfd93 = L.marker(
+            [30.2846205, -97.70491],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_1b14fa6c31614cfb80d2dd7ae768a6cd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_5b79c6ff2ecd42a180b4698a7ec44946 = $('             <div id="vega_5b79c6ff2ecd42a180b4698a7ec44946"></div>             ')[0];
+                popup_1b14fa6c31614cfb80d2dd7ae768a6cd.setContent(vega_5b79c6ff2ecd42a180b4698a7ec44946);
+            
+
+            marker_79d845530e9b45b19aa222a15cedfd93.bindPopup(popup_1b14fa6c31614cfb80d2dd7ae768a6cd)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.954545454545457}, {"col": "Rating", "idx": "Bars", "val": 8.4}, {"col": "Rating", "idx": "Clubs", "val": 9.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_5b79c6ff2ecd42a180b4698a7ec44946);
+            
+            
+        
+    
+        marker_79d845530e9b45b19aa222a15cedfd93.bindTooltip(
+            '<div>'
+            + '78722' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_8ee1639ef10547a485abe0fdf8e790be = L.marker(
+            [30.3014873386, -97.7051964666],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_d19ec94becdc4b86b636abbfcaa81e12 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_ca4b6b9820c743e8be67c041fad66ea8 = $('             <div id="vega_ca4b6b9820c743e8be67c041fad66ea8"></div>             ')[0];
+                popup_d19ec94becdc4b86b636abbfcaa81e12.setContent(vega_ca4b6b9820c743e8be67c041fad66ea8);
+            
+
+            marker_8ee1639ef10547a485abe0fdf8e790be.bindPopup(popup_d19ec94becdc4b86b636abbfcaa81e12)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 7.96875}, {"col": "Rating", "idx": "Bars", "val": 7.583333333333333}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_ca4b6b9820c743e8be67c041fad66ea8);
+            
+            
+        
+    
+        marker_8ee1639ef10547a485abe0fdf8e790be.bindTooltip(
+            '<div>'
+            + '78723' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_e0bb51ae3f374afa840dd55e06b08bbd = L.marker(
+            [30.29005, -97.62819],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_fbb8176cc3c84b7fbd44a2612e1dda17 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_b3008934d1034bd2b83bd56023b844fc = $('             <div id="vega_b3008934d1034bd2b83bd56023b844fc"></div>             ')[0];
+                popup_fbb8176cc3c84b7fbd44a2612e1dda17.setContent(vega_b3008934d1034bd2b83bd56023b844fc);
+            
+
+            marker_e0bb51ae3f374afa840dd55e06b08bbd.bindPopup(popup_fbb8176cc3c84b7fbd44a2612e1dda17)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 5.0}, {"col": "Rating", "idx": "Bars", "val": 2.0}, {"col": "Rating", "idx": "Clubs", "val": 5.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_b3008934d1034bd2b83bd56023b844fc);
+            
+            
+        
+    
+        marker_e0bb51ae3f374afa840dd55e06b08bbd.bindTooltip(
+            '<div>'
+            + '78724' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_fed38bb80e4242bf8353dd89372880da = L.marker(
+            [30.418793015, -97.8483083006],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_22985abcbac749dc9c07a3b5e76415dd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_b401b537a5fa40628f181672c168c3ce = $('             <div id="vega_b401b537a5fa40628f181672c168c3ce"></div>             ')[0];
+                popup_22985abcbac749dc9c07a3b5e76415dd.setContent(vega_b401b537a5fa40628f181672c168c3ce);
+            
+
+            marker_fed38bb80e4242bf8353dd89372880da.bindPopup(popup_22985abcbac749dc9c07a3b5e76415dd)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 7.266666666666666}, {"col": "Rating", "idx": "Bars", "val": 7.5}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_b401b537a5fa40628f181672c168c3ce);
+            
+            
+        
+    
+        marker_fed38bb80e4242bf8353dd89372880da.bindTooltip(
+            '<div>'
+            + '78726' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_f5958ecea8484bd29650327a86dc841e = L.marker(
+            [30.4261645227, -97.7260096844],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_1102a398328a4ec7bae61c4c8aa9b845 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_c314b3d68fb84cfe89fc0b2819115a57 = $('             <div id="vega_c314b3d68fb84cfe89fc0b2819115a57"></div>             ')[0];
+                popup_1102a398328a4ec7bae61c4c8aa9b845.setContent(vega_c314b3d68fb84cfe89fc0b2819115a57);
+            
+
+            marker_f5958ecea8484bd29650327a86dc841e.bindPopup(popup_1102a398328a4ec7bae61c4c8aa9b845)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 7.2857142857142865}, {"col": "Rating", "idx": "Bars", "val": 7.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_c314b3d68fb84cfe89fc0b2819115a57);
+            
+            
+        
+    
+        marker_f5958ecea8484bd29650327a86dc841e.bindTooltip(
+            '<div>'
+            + '78727' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_a2db665db3c344cd9fd663ee793983fe = L.marker(
+            [30.4393654219, -97.6817185595],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_274170454ca04469af2e475975968917 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_9182ec66497f48ab8dd4acb2354b7298 = $('             <div id="vega_9182ec66497f48ab8dd4acb2354b7298"></div>             ')[0];
+                popup_274170454ca04469af2e475975968917.setContent(vega_9182ec66497f48ab8dd4acb2354b7298);
+            
+
+            marker_a2db665db3c344cd9fd663ee793983fe.bindPopup(popup_274170454ca04469af2e475975968917)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 7.857142857142858}, {"col": "Rating", "idx": "Bars", "val": 7.25}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_9182ec66497f48ab8dd4acb2354b7298);
+            
+            
+        
+    
+        marker_a2db665db3c344cd9fd663ee793983fe.bindTooltip(
+            '<div>'
+            + '78728' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_0314b5f3ac03489c8931fea6d8b2cd09 = L.marker(
+            [30.4504173333, -97.7803613333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_6eaa57d8ef1d4a379b8eea5a9b374ffd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_e1d8f9f5c6fc4647bde87aa4bbb0c427 = $('             <div id="vega_e1d8f9f5c6fc4647bde87aa4bbb0c427"></div>             ')[0];
+                popup_6eaa57d8ef1d4a379b8eea5a9b374ffd.setContent(vega_e1d8f9f5c6fc4647bde87aa4bbb0c427);
+            
+
+            marker_0314b5f3ac03489c8931fea6d8b2cd09.bindPopup(popup_6eaa57d8ef1d4a379b8eea5a9b374ffd)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.4}, {"col": "Rating", "idx": "Bars", "val": 8.222222222222221}, {"col": "Rating", "idx": "Clubs", "val": 7.666666666666667}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_e1d8f9f5c6fc4647bde87aa4bbb0c427);
+            
+            
+        
+    
+        marker_0314b5f3ac03489c8931fea6d8b2cd09.bindTooltip(
+            '<div>'
+            + '78729' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_251a9f2d5276425192d19212e67c90d7 = L.marker(
+            [30.355045, -97.755592],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_91da97e1839c44649449fd346cfb5145 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_cf9521036dc945a1a0c9dbf277b29d13 = $('             <div id="vega_cf9521036dc945a1a0c9dbf277b29d13"></div>             ')[0];
+                popup_91da97e1839c44649449fd346cfb5145.setContent(vega_cf9521036dc945a1a0c9dbf277b29d13);
+            
+
+            marker_251a9f2d5276425192d19212e67c90d7.bindPopup(popup_91da97e1839c44649449fd346cfb5145)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.391304347826088}, {"col": "Rating", "idx": "Bars", "val": 7.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_cf9521036dc945a1a0c9dbf277b29d13);
+            
+            
+        
+    
+        marker_251a9f2d5276425192d19212e67c90d7.bindTooltip(
+            '<div>'
+            + '78731' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_2cc1d0243de541f29c3513ba06d11ec2 = L.marker(
+            [30.3832662283, -97.8862275589],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_d4f05ca4fae74776900f52299b059314 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_73a51daa531b4a16a150681d8ac084c7 = $('             <div id="vega_73a51daa531b4a16a150681d8ac084c7"></div>             ')[0];
+                popup_d4f05ca4fae74776900f52299b059314.setContent(vega_73a51daa531b4a16a150681d8ac084c7);
+            
+
+            marker_2cc1d0243de541f29c3513ba06d11ec2.bindPopup(popup_d4f05ca4fae74776900f52299b059314)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 7.375}, {"col": "Rating", "idx": "Bars", "val": 0.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_73a51daa531b4a16a150681d8ac084c7);
+            
+            
+        
+    
+        marker_2cc1d0243de541f29c3513ba06d11ec2.bindTooltip(
+            '<div>'
+            + '78732' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_8fec473503744896aba6fadbabcc82a9 = L.marker(
+            [30.3257676052, -97.8820037842],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_d7e714e82a1646e48f60f9ef230656c0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_3f72e52ed44f4605ab1f077f5029c62e = $('             <div id="vega_3f72e52ed44f4605ab1f077f5029c62e"></div>             ')[0];
+                popup_d7e714e82a1646e48f60f9ef230656c0.setContent(vega_3f72e52ed44f4605ab1f077f5029c62e);
+            
+
+            marker_8fec473503744896aba6fadbabcc82a9.bindPopup(popup_d7e714e82a1646e48f60f9ef230656c0)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.0}, {"col": "Rating", "idx": "Bars", "val": 6.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_3f72e52ed44f4605ab1f077f5029c62e);
+            
+            
+        
+    
+        marker_8fec473503744896aba6fadbabcc82a9.bindTooltip(
+            '<div>'
+            + '78733' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_a9f98b5b95ad42bb8bcf379fa7341593 = L.marker(
+            [30.3784125, -97.9529936],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_9222088ca85f45ea9f2601229a74d614 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_87e738fff3104047a9b32474c72107ec = $('             <div id="vega_87e738fff3104047a9b32474c72107ec"></div>             ')[0];
+                popup_9222088ca85f45ea9f2601229a74d614.setContent(vega_87e738fff3104047a9b32474c72107ec);
+            
+
+            marker_a9f98b5b95ad42bb8bcf379fa7341593.bindPopup(popup_9222088ca85f45ea9f2601229a74d614)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 6.25}, {"col": "Rating", "idx": "Bars", "val": 7.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_87e738fff3104047a9b32474c72107ec);
+            
+            
+        
+    
+        marker_a9f98b5b95ad42bb8bcf379fa7341593.bindTooltip(
+            '<div>'
+            + '78734' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_1281011f425c45498b23c1fa73b2bf7d = L.marker(
+            [30.2363456599, -97.8561775191],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_6a97c5eb17594d1fbefe07a251070cdf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_45b2ba2c355f4bf1970738ebdfbc5c99 = $('             <div id="vega_45b2ba2c355f4bf1970738ebdfbc5c99"></div>             ')[0];
+                popup_6a97c5eb17594d1fbefe07a251070cdf.setContent(vega_45b2ba2c355f4bf1970738ebdfbc5c99);
+            
+
+            marker_1281011f425c45498b23c1fa73b2bf7d.bindPopup(popup_6a97c5eb17594d1fbefe07a251070cdf)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 7.473684210526316}, {"col": "Rating", "idx": "Bars", "val": 6.666666666666666}, {"col": "Rating", "idx": "Clubs", "val": 7.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_45b2ba2c355f4bf1970738ebdfbc5c99);
+            
+            
+        
+    
+        marker_1281011f425c45498b23c1fa73b2bf7d.bindTooltip(
+            '<div>'
+            + '78735' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_5efebccb4a344d5ca06fb7ccba0f0003 = L.marker(
+            [30.2312371514, -97.9273119884],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_dd0f2d325e4446dd93c1436ec1ea48a5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_08b47887821a4d2ea0509ab9cec18d69 = $('             <div id="vega_08b47887821a4d2ea0509ab9cec18d69"></div>             ')[0];
+                popup_dd0f2d325e4446dd93c1436ec1ea48a5.setContent(vega_08b47887821a4d2ea0509ab9cec18d69);
+            
+
+            marker_5efebccb4a344d5ca06fb7ccba0f0003.bindPopup(popup_dd0f2d325e4446dd93c1436ec1ea48a5)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.166666666666666}, {"col": "Rating", "idx": "Bars", "val": 9.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_08b47887821a4d2ea0509ab9cec18d69);
+            
+            
+        
+    
+        marker_5efebccb4a344d5ca06fb7ccba0f0003.bindTooltip(
+            '<div>'
+            + '78736' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_3a116657bbc74be0b5fc7237b83f37db = L.marker(
+            [30.2106547082, -97.9688636691],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_5461458b036f4707875162ecf64e0922 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_d9a98d6dfbfd42cc81b8edc1e01be872 = $('             <div id="vega_d9a98d6dfbfd42cc81b8edc1e01be872"></div>             ')[0];
+                popup_5461458b036f4707875162ecf64e0922.setContent(vega_d9a98d6dfbfd42cc81b8edc1e01be872);
+            
+
+            marker_3a116657bbc74be0b5fc7237b83f37db.bindPopup(popup_5461458b036f4707875162ecf64e0922)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 9.0}, {"col": "Rating", "idx": "Bars", "val": 7.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_d9a98d6dfbfd42cc81b8edc1e01be872);
+            
+            
+        
+    
+        marker_3a116657bbc74be0b5fc7237b83f37db.bindTooltip(
+            '<div>'
+            + '78737' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_76a390316017497cbc43fe7cc0100c89 = L.marker(
+            [30.3085595454, -97.9413680134],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_390b7ccf48ae4ea7aa7263f06eda3cd4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_a092d85f4d09407ab616428d86cd0be7 = $('             <div id="vega_a092d85f4d09407ab616428d86cd0be7"></div>             ')[0];
+                popup_390b7ccf48ae4ea7aa7263f06eda3cd4.setContent(vega_a092d85f4d09407ab616428d86cd0be7);
+            
+
+            marker_76a390316017497cbc43fe7cc0100c89.bindPopup(popup_390b7ccf48ae4ea7aa7263f06eda3cd4)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 7.75}, {"col": "Rating", "idx": "Bars", "val": 6.545454545454546}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_a092d85f4d09407ab616428d86cd0be7);
+            
+            
+        
+    
+        marker_76a390316017497cbc43fe7cc0100c89.bindTooltip(
+            '<div>'
+            + '78738' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_c96a587215884f1dab37e037b04b090a = L.marker(
+            [30.199722, -97.869529],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_3a61793f65884ba19ef33ec7819216fb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_de623075320447ea809ee6e25d753d97 = $('             <div id="vega_de623075320447ea809ee6e25d753d97"></div>             ')[0];
+                popup_3a61793f65884ba19ef33ec7819216fb.setContent(vega_de623075320447ea809ee6e25d753d97);
+            
+
+            marker_c96a587215884f1dab37e037b04b090a.bindPopup(popup_3a61793f65884ba19ef33ec7819216fb)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 7.0}, {"col": "Rating", "idx": "Bars", "val": 7.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_de623075320447ea809ee6e25d753d97);
+            
+            
+        
+    
+        marker_c96a587215884f1dab37e037b04b090a.bindTooltip(
+            '<div>'
+            + '78739' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_823240f31fcc4c0f90a21cceaafb2e01 = L.marker(
+            [30.24022, -97.72808],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_3efe4acd279c4afeb678129d7c72a77c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_ac75cd4a94a444fa9b70591d47fa4be3 = $('             <div id="vega_ac75cd4a94a444fa9b70591d47fa4be3"></div>             ')[0];
+                popup_3efe4acd279c4afeb678129d7c72a77c.setContent(vega_ac75cd4a94a444fa9b70591d47fa4be3);
+            
+
+            marker_823240f31fcc4c0f90a21cceaafb2e01.bindPopup(popup_3efe4acd279c4afeb678129d7c72a77c)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.303030303030303}, {"col": "Rating", "idx": "Bars", "val": 6.869565217391305}, {"col": "Rating", "idx": "Clubs", "val": 6.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_ac75cd4a94a444fa9b70591d47fa4be3);
+            
+            
+        
+    
+        marker_823240f31fcc4c0f90a21cceaafb2e01.bindTooltip(
+            '<div>'
+            + '78741' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_725be284dc184adc83b67d88ef01b5b0 = L.marker(
+            [30.2119300039, -97.7296185185],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_979dc4319a23453dad354b14b06b7051 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_51d778a42a974db58ef47452c0c19802 = $('             <div id="vega_51d778a42a974db58ef47452c0c19802"></div>             ')[0];
+                popup_979dc4319a23453dad354b14b06b7051.setContent(vega_51d778a42a974db58ef47452c0c19802);
+            
+
+            marker_725be284dc184adc83b67d88ef01b5b0.bindPopup(popup_979dc4319a23453dad354b14b06b7051)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 7.68421052631579}, {"col": "Rating", "idx": "Bars", "val": 8.8}, {"col": "Rating", "idx": "Clubs", "val": 9.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_51d778a42a974db58ef47452c0c19802);
+            
+            
+        
+    
+        marker_725be284dc184adc83b67d88ef01b5b0.bindTooltip(
+            '<div>'
+            + '78744' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_1f57d2ae6e6c492c96ea7ea30e45b331 = L.marker(
+            [30.2116873951, -97.7818623447],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_b1b7368bbb5a49f4909002d330342284 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_01130c86afa34720ac62431a7e0e753d = $('             <div id="vega_01130c86afa34720ac62431a7e0e753d"></div>             ')[0];
+                popup_b1b7368bbb5a49f4909002d330342284.setContent(vega_01130c86afa34720ac62431a7e0e753d);
+            
+
+            marker_1f57d2ae6e6c492c96ea7ea30e45b331.bindPopup(popup_b1b7368bbb5a49f4909002d330342284)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.244897959183673}, {"col": "Rating", "idx": "Bars", "val": 8.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_01130c86afa34720ac62431a7e0e753d);
+            
+            
+        
+    
+        marker_1f57d2ae6e6c492c96ea7ea30e45b331.bindTooltip(
+            '<div>'
+            + '78745' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_cb02e1c66b51409aa0054c93481f3162 = L.marker(
+            [30.271544, -97.8057706667],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_cd120f9020884b6aa0deca620488f3b1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_e6ef183012b047da924d81bbcf7c551b = $('             <div id="vega_e6ef183012b047da924d81bbcf7c551b"></div>             ')[0];
+                popup_cd120f9020884b6aa0deca620488f3b1.setContent(vega_e6ef183012b047da924d81bbcf7c551b);
+            
+
+            marker_cb02e1c66b51409aa0054c93481f3162.bindPopup(popup_cd120f9020884b6aa0deca620488f3b1)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.09375}, {"col": "Rating", "idx": "Bars", "val": 7.333333333333333}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_e6ef183012b047da924d81bbcf7c551b);
+            
+            
+        
+    
+        marker_cb02e1c66b51409aa0054c93481f3162.bindTooltip(
+            '<div>'
+            + '78746' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_252a168b33af4a0a81247c7d9acba2ce = L.marker(
+            [30.1573804355, -97.744213379],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_0f3829a37cf64bada3d17000fe6594fd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_7125db81046346de96c9670520c17fc6 = $('             <div id="vega_7125db81046346de96c9670520c17fc6"></div>             ')[0];
+                popup_0f3829a37cf64bada3d17000fe6594fd.setContent(vega_7125db81046346de96c9670520c17fc6);
+            
+
+            marker_252a168b33af4a0a81247c7d9acba2ce.bindPopup(popup_0f3829a37cf64bada3d17000fe6594fd)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 5.0}, {"col": "Rating", "idx": "Bars", "val": 0.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_7125db81046346de96c9670520c17fc6);
+            
+            
+        
+    
+        marker_252a168b33af4a0a81247c7d9acba2ce.bindTooltip(
+            '<div>'
+            + '78747' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_778b7ef3d0564948aa99c5ff3010d65f = L.marker(
+            [30.1710298328, -97.8264242718],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_f359d119a9e3499e8cbb06ec3f848a6d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_8186025e6aa8469286a2a144357d09c2 = $('             <div id="vega_8186025e6aa8469286a2a144357d09c2"></div>             ')[0];
+                popup_f359d119a9e3499e8cbb06ec3f848a6d.setContent(vega_8186025e6aa8469286a2a144357d09c2);
+            
+
+            marker_778b7ef3d0564948aa99c5ff3010d65f.bindPopup(popup_f359d119a9e3499e8cbb06ec3f848a6d)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 7.791666666666667}, {"col": "Rating", "idx": "Bars", "val": 7.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_8186025e6aa8469286a2a144357d09c2);
+            
+            
+        
+    
+        marker_778b7ef3d0564948aa99c5ff3010d65f.bindTooltip(
+            '<div>'
+            + '78748' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_24b6324f912849249e66fa99e5b22b46 = L.marker(
+            [30.2144402153, -97.8540094725],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_642649eb54fc499e99422fc7ec5642ed = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_9e4fca556dd645e4b819c57ffc8933c3 = $('             <div id="vega_9e4fca556dd645e4b819c57ffc8933c3"></div>             ')[0];
+                popup_642649eb54fc499e99422fc7ec5642ed.setContent(vega_9e4fca556dd645e4b819c57ffc8933c3);
+            
+
+            marker_24b6324f912849249e66fa99e5b22b46.bindPopup(popup_642649eb54fc499e99422fc7ec5642ed)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 7.0625}, {"col": "Rating", "idx": "Bars", "val": 7.444444444444445}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_9e4fca556dd645e4b819c57ffc8933c3);
+            
+            
+        
+    
+        marker_24b6324f912849249e66fa99e5b22b46.bindTooltip(
+            '<div>'
+            + '78749' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_24c4011550e349e1b3d40b9609df3e23 = L.marker(
+            [30.4571215984, -97.799799305],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_021d68cb9c594b5ea9310f9d034f4bcd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_5c1954d4fdb84eceb11403faa02ee1af = $('             <div id="vega_5c1954d4fdb84eceb11403faa02ee1af"></div>             ')[0];
+                popup_021d68cb9c594b5ea9310f9d034f4bcd.setContent(vega_5c1954d4fdb84eceb11403faa02ee1af);
+            
+
+            marker_24c4011550e349e1b3d40b9609df3e23.bindPopup(popup_021d68cb9c594b5ea9310f9d034f4bcd)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 7.967741935483872}, {"col": "Rating", "idx": "Bars", "val": 7.6}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_5c1954d4fdb84eceb11403faa02ee1af);
+            
+            
+        
+    
+        marker_24c4011550e349e1b3d40b9609df3e23.bindTooltip(
+            '<div>'
+            + '78750' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_6ed88a46bdf94ae2a28180c0add232cf = L.marker(
+            [30.3134735968, -97.7221386484],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_fc48cb5fb521498bbb981a5ae30857f5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_3897fdeca9cf4628a0ef135977c6be19 = $('             <div id="vega_3897fdeca9cf4628a0ef135977c6be19"></div>             ')[0];
+                popup_fc48cb5fb521498bbb981a5ae30857f5.setContent(vega_3897fdeca9cf4628a0ef135977c6be19);
+            
+
+            marker_6ed88a46bdf94ae2a28180c0add232cf.bindPopup(popup_fc48cb5fb521498bbb981a5ae30857f5)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.666666666666666}, {"col": "Rating", "idx": "Bars", "val": 7.7894736842105265}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_3897fdeca9cf4628a0ef135977c6be19);
+            
+            
+        
+    
+        marker_6ed88a46bdf94ae2a28180c0add232cf.bindTooltip(
+            '<div>'
+            + '78751' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_8edeb3a88c1744029a444a4e0d1d615b = L.marker(
+            [30.3292980194, -97.6904373169],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_58ad2871912e497b8fff5832ccf92abc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_cbfadbc72cd9441a85894cbc939a746b = $('             <div id="vega_cbfadbc72cd9441a85894cbc939a746b"></div>             ')[0];
+                popup_58ad2871912e497b8fff5832ccf92abc.setContent(vega_cbfadbc72cd9441a85894cbc939a746b);
+            
+
+            marker_8edeb3a88c1744029a444a4e0d1d615b.bindPopup(popup_58ad2871912e497b8fff5832ccf92abc)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.245283018867925}, {"col": "Rating", "idx": "Bars", "val": 6.804878048780488}, {"col": "Rating", "idx": "Clubs", "val": 6.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_cbfadbc72cd9441a85894cbc939a746b);
+            
+            
+        
+    
+        marker_8edeb3a88c1744029a444a4e0d1d615b.bindTooltip(
+            '<div>'
+            + '78752' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_5007255da73846b488fedf823098a992 = L.marker(
+            [30.3889868, -97.6710889],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_e63583a79182491eabc4fb8f0f244466 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_d6e842ee98a94836af9fa0a753bf4126 = $('             <div id="vega_d6e842ee98a94836af9fa0a753bf4126"></div>             ')[0];
+                popup_e63583a79182491eabc4fb8f0f244466.setContent(vega_d6e842ee98a94836af9fa0a753bf4126);
+            
+
+            marker_5007255da73846b488fedf823098a992.bindPopup(popup_e63583a79182491eabc4fb8f0f244466)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.297297297297295}, {"col": "Rating", "idx": "Bars", "val": 7.166666666666666}, {"col": "Rating", "idx": "Clubs", "val": 10.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_d6e842ee98a94836af9fa0a753bf4126);
+            
+            
+        
+    
+        marker_5007255da73846b488fedf823098a992.bindTooltip(
+            '<div>'
+            + '78753' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_34baadd7504244ecb1e8bc9ecef934e1 = L.marker(
+            [30.3467650045, -97.672942706],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_d30279d8ec844564a00bf4ae238e00ff = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_f932d0af7efb45579310e2ef3f2aab50 = $('             <div id="vega_f932d0af7efb45579310e2ef3f2aab50"></div>             ')[0];
+                popup_d30279d8ec844564a00bf4ae238e00ff.setContent(vega_f932d0af7efb45579310e2ef3f2aab50);
+            
+
+            marker_34baadd7504244ecb1e8bc9ecef934e1.bindPopup(popup_d30279d8ec844564a00bf4ae238e00ff)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.3}, {"col": "Rating", "idx": "Bars", "val": 0.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_f932d0af7efb45579310e2ef3f2aab50);
+            
+            
+        
+    
+        marker_34baadd7504244ecb1e8bc9ecef934e1.bindTooltip(
+            '<div>'
+            + '78754' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_21978a08bbf04a7680f45891dbdd7b50 = L.marker(
+            [30.35416, -97.75496],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_4bb1bc5a624646249160b76c4cedf0b6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_9568365b0173426f818e45fcd993e04d = $('             <div id="vega_9568365b0173426f818e45fcd993e04d"></div>             ')[0];
+                popup_4bb1bc5a624646249160b76c4cedf0b6.setContent(vega_9568365b0173426f818e45fcd993e04d);
+            
+
+            marker_21978a08bbf04a7680f45891dbdd7b50.bindPopup(popup_4bb1bc5a624646249160b76c4cedf0b6)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 10.0}, {"col": "Rating", "idx": "Bars", "val": 0.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_9568365b0173426f818e45fcd993e04d);
+            
+            
+        
+    
+        marker_21978a08bbf04a7680f45891dbdd7b50.bindTooltip(
+            '<div>'
+            + '78755' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_e9cabd1b9f854305b3cf3786d07f2896 = L.marker(
+            [30.3162955102, -97.7408760638],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_30856d0c781042d7a2d65bfe9dd4bb9c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_7fe940d6d02d4436a0ad1d6a116c164e = $('             <div id="vega_7fe940d6d02d4436a0ad1d6a116c164e"></div>             ')[0];
+                popup_30856d0c781042d7a2d65bfe9dd4bb9c.setContent(vega_7fe940d6d02d4436a0ad1d6a116c164e);
+            
+
+            marker_e9cabd1b9f854305b3cf3786d07f2896.bindPopup(popup_30856d0c781042d7a2d65bfe9dd4bb9c)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.451612903225808}, {"col": "Rating", "idx": "Bars", "val": 7.881355932203389}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_7fe940d6d02d4436a0ad1d6a116c164e);
+            
+            
+        
+    
+        marker_e9cabd1b9f854305b3cf3786d07f2896.bindTooltip(
+            '<div>'
+            + '78756' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_19c8f22121e947fd98cbf8a272cd1697 = L.marker(
+            [30.3532503222, -97.7326846007],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_b79fbaada65d44c0bd5f9dee6a26706d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_f1a81ff5ad994e3583822a88fa39015d = $('             <div id="vega_f1a81ff5ad994e3583822a88fa39015d"></div>             ')[0];
+                popup_b79fbaada65d44c0bd5f9dee6a26706d.setContent(vega_f1a81ff5ad994e3583822a88fa39015d);
+            
+
+            marker_19c8f22121e947fd98cbf8a272cd1697.bindPopup(popup_b79fbaada65d44c0bd5f9dee6a26706d)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.422222222222222}, {"col": "Rating", "idx": "Bars", "val": 7.863636363636363}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_f1a81ff5ad994e3583822a88fa39015d);
+            
+            
+        
+    
+        marker_19c8f22121e947fd98cbf8a272cd1697.bindTooltip(
+            '<div>'
+            + '78757' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_dc3141124ced414f82292dcf033311bd = L.marker(
+            [30.397837705, -97.7215615381],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_6475681bc74941988cdcad6566be4960 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_33f19285ea0649dbb746f51f3f094c36 = $('             <div id="vega_33f19285ea0649dbb746f51f3f094c36"></div>             ')[0];
+                popup_6475681bc74941988cdcad6566be4960.setContent(vega_33f19285ea0649dbb746f51f3f094c36);
+            
+
+            marker_dc3141124ced414f82292dcf033311bd.bindPopup(popup_6475681bc74941988cdcad6566be4960)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.323529411764707}, {"col": "Rating", "idx": "Bars", "val": 7.30188679245283}, {"col": "Rating", "idx": "Clubs", "val": 6.5}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_33f19285ea0649dbb746f51f3f094c36);
+            
+            
+        
+    
+        marker_dc3141124ced414f82292dcf033311bd.bindTooltip(
+            '<div>'
+            + '78758' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_92488707a08444a59da08691bc2b1bd8 = L.marker(
+            [30.4074304119, -97.7486335412],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_ac1ac960b3f84c3aa0d3248cb5a8f428 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_279a5d59e8374bd2b002b3f4075af9cb = $('             <div id="vega_279a5d59e8374bd2b002b3f4075af9cb"></div>             ')[0];
+                popup_ac1ac960b3f84c3aa0d3248cb5a8f428.setContent(vega_279a5d59e8374bd2b002b3f4075af9cb);
+            
+
+            marker_92488707a08444a59da08691bc2b1bd8.bindPopup(popup_ac1ac960b3f84c3aa0d3248cb5a8f428)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.170731707317072}, {"col": "Rating", "idx": "Bars", "val": 7.625}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_279a5d59e8374bd2b002b3f4075af9cb);
+            
+            
+        
+    
+        marker_92488707a08444a59da08691bc2b1bd8.bindTooltip(
+            '<div>'
+            + '78759' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_b1155e202cbc451999c28a92762bc7f7 = L.marker(
+            [30.266944, -97.742778],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_34b44d02db87486e9b28631f307f410b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_e8b8355597b749bfb95b88e6913e8dca = $('             <div id="vega_e8b8355597b749bfb95b88e6913e8dca"></div>             ')[0];
+                popup_34b44d02db87486e9b28631f307f410b.setContent(vega_e8b8355597b749bfb95b88e6913e8dca);
+            
+
+            marker_b1155e202cbc451999c28a92762bc7f7.bindPopup(popup_34b44d02db87486e9b28631f307f410b)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 8.0}, {"col": "Rating", "idx": "Bars", "val": 0.0}, {"col": "Rating", "idx": "Clubs", "val": 4.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_e8b8355597b749bfb95b88e6913e8dca);
+            
+            
+        
+    
+        marker_b1155e202cbc451999c28a92762bc7f7.bindTooltip(
+            '<div>'
+            + '78798' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_1dbd1381103f49cb85684b39ddfe034f = L.marker(
+            [30.52913, -97.683],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_5997e94137694eb8abfcab999387a696 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_9d424e50319846829f73a6a4808634c7 = $('             <div id="vega_9d424e50319846829f73a6a4808634c7"></div>             ')[0];
+                popup_5997e94137694eb8abfcab999387a696.setContent(vega_9d424e50319846829f73a6a4808634c7);
+            
+
+            marker_1dbd1381103f49cb85684b39ddfe034f.bindPopup(popup_5997e94137694eb8abfcab999387a696)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 0.0}, {"col": "Rating", "idx": "Bars", "val": 7.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_9d424e50319846829f73a6a4808634c7);
+            
+            
+        
+    
+        marker_1dbd1381103f49cb85684b39ddfe034f.bindTooltip(
+            '<div>'
+            + '78664' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_883aed8bd176472392ff489dff7b6c87 = L.marker(
+            [30.2861233893, -97.7410697937],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_601fc621fbcd492684813fb356b4ab4a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_5d4c05ca987c4e2a8e05a00fcd131452 = $('             <div id="vega_5d4c05ca987c4e2a8e05a00fcd131452"></div>             ')[0];
+                popup_601fc621fbcd492684813fb356b4ab4a.setContent(vega_5d4c05ca987c4e2a8e05a00fcd131452);
+            
+
+            marker_883aed8bd176472392ff489dff7b6c87.bindPopup(popup_601fc621fbcd492684813fb356b4ab4a)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 0.0}, {"col": "Rating", "idx": "Bars", "val": 9.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_5d4c05ca987c4e2a8e05a00fcd131452);
+            
+            
+        
+    
+        marker_883aed8bd176472392ff489dff7b6c87.bindTooltip(
+            '<div>'
+            + '78713' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_a73cda6fe6a54b2290f134ed729aa591 = L.marker(
+            [30.2286097, -97.6639062],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_49bfa5a95f7e44cd9e0b6b600ad82e64 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_ba1bc1e69d014a3ea3c92a2a8f63c683 = $('             <div id="vega_ba1bc1e69d014a3ea3c92a2a8f63c683"></div>             ')[0];
+                popup_49bfa5a95f7e44cd9e0b6b600ad82e64.setContent(vega_ba1bc1e69d014a3ea3c92a2a8f63c683);
+            
+
+            marker_a73cda6fe6a54b2290f134ed729aa591.bindPopup(popup_49bfa5a95f7e44cd9e0b6b600ad82e64)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 0.0}, {"col": "Rating", "idx": "Bars", "val": 6.0}, {"col": "Rating", "idx": "Clubs", "val": 0.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_ba1bc1e69d014a3ea3c92a2a8f63c683);
+            
+            
+        
+    
+        marker_a73cda6fe6a54b2290f134ed729aa591.bindTooltip(
+            '<div>'
+            + '78742' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_eed5937e05f049aab4930e6f2dc9337e = L.marker(
+            [30.298709, -97.725207],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_c9dde7df7f9f43f8b7601ec2f08e5fa3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_e0fa5fadfc9f4dcba5a2aa96fcb0839c = $('             <div id="vega_e0fa5fadfc9f4dcba5a2aa96fcb0839c"></div>             ')[0];
+                popup_c9dde7df7f9f43f8b7601ec2f08e5fa3.setContent(vega_e0fa5fadfc9f4dcba5a2aa96fcb0839c);
+            
+
+            marker_eed5937e05f049aab4930e6f2dc9337e.bindPopup(popup_c9dde7df7f9f43f8b7601ec2f08e5fa3)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 0.0}, {"col": "Rating", "idx": "Bars", "val": 0.0}, {"col": "Rating", "idx": "Clubs", "val": 10.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_e0fa5fadfc9f4dcba5a2aa96fcb0839c);
+            
+            
+        
+    
+        marker_eed5937e05f049aab4930e6f2dc9337e.bindTooltip(
+            '<div>'
+            + '78765' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_841d58d6c3bd4f16bf42b5e1ac984459 = L.marker(
+            [30.2675569845, -97.7409903101],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f0536e4f5f64451cb254ff62475eafb0);
+        
+    
+            var popup_9594d81054244cf696ad183b8360cda0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var vega_4a571069066c419483bd815d4642460d = $('             <div id="vega_4a571069066c419483bd815d4642460d"></div>             ')[0];
+                popup_9594d81054244cf696ad183b8360cda0.setContent(vega_4a571069066c419483bd815d4642460d);
+            
+
+            marker_841d58d6c3bd4f16bf42b5e1ac984459.bindPopup(popup_9594d81054244cf696ad183b8360cda0)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"properties": {"labels": {"angle": {"value": -45}}}, "scale": "x", "title": "Night Life", "type": "x"}, {"scale": "y", "title": "Ratings", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Rating", "idx": "Restaurants", "val": 0.0}, {"col": "Rating", "idx": "Bars", "val": 0.0}, {"col": "Rating", "idx": "Clubs", "val": 7.0}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "pos"}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}, "type": "rect"}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}, "scales": [{"domain": {"field": "data.col"}, "name": "pos", "range": "width", "type": "ordinal"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#8856a7"], "type": "ordinal"}], "width": 100},vega_4a571069066c419483bd815d4642460d);
+            
+            
+        
+    
+        marker_841d58d6c3bd4f16bf42b5e1ac984459.bindTooltip(
+            '<div>'
+            + '78799' + '</div>',
+            {"sticky": true}
+        );
+        
+</script>
